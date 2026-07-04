@@ -1,0 +1,56 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/custom-header",
+	"version": "0.1.0",
+	"title": "Custom Header",
+	"category": "widgets",
+	"description": "Add heading, logo, navigation , buttons using a single block.",
+	"attributes": {
+		"activeTab":{
+			"type": "string",
+			"default": "general"
+							
+		},
+		"subheading": {
+			"type": "string",
+			"default": "Add Subtitle"			
+		},
+		"heading":{
+			"type":"string"
+		},
+		"iconName":{
+			"type":"string"
+		},
+		"showSubHeading":{
+			"type":"boolean"
+		},
+		"headingTag":{
+			"type":"string",
+			"default": "h2"
+		},
+		"sectionBackgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"subHeadingColor": {
+			"type": "string",
+			"default": "#26335B"
+		},
+		"headingColor": {
+			"type": "string",
+			"default": "#8E9FBC"
+		},
+		"headingContent": {
+			"type": "string",
+			"default": "Add Title"
+		},
+		"buttonText": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "craft-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

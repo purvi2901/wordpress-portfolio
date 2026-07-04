@@ -1,0 +1,444 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+/* icon-box block style start */
+.icon-box-block-section .icon-box-block-container { box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10); padding: 25px 42px 38px; }
+.icon-box-block-section .icon-box-block-content { color: #222; font-size: 20px; font-family: Roboto; line-height: 30px;padding: 16px 0; }
+.icon-box-block-section .icon-with-text{display:flex;align-items:center;flex-wrap:wrap;}
+.icon-box-block-section .icon-with-text .icon-title{line-height:20px;}
+.icon-box-block-section .icon-with-text .icon-title h2 {margin:0;font-size: 50px;font-family: Roboto;font-weight: 700;line-height: 58px;}
+.icon-box-block-section .icon-with-text .icon-img{width:47.5px;height:46.757px; margin-right:20px;}
+.icon-box-block-section .learn-more img{width:24px;height:24px;margin-right:4px;}
+.icon-box-block-section .icon-boxes .icon-box-container { flex: 1 1 auto;}
+.icon-box-block-section .icon-boxes { width: 100%; display: flex; flex-wrap: wrap; }
+.icon-box-block-section .icon-boxes { gap: 50px; }
+
+.icon-box-block-section .icon-box-block-container.text-center { text-align: center; }
+.icon-box-block-section .icon-box-block-container.text-center .icon-with-text { justify-content: center; }
+.icon-box-block-section .icon-box-block-container.text-center> * { max-width: 784px; margin: 0 auto; }
+.icon-box-block-section .icon-box-block-container.text-left { text-align: left; }
+.icon-box-block-section .icon-box-block-container.text-right { text-align: right; }
+.icon-box-block-section .icon-box-block-container.text-right .icon-with-text { justify-content: flex-end; }
+.icon-box-block-section .icon-with-text .icon-title h3 {font-weight: 700 !important;}
+.icon-box-inspector-tabs {
+	width: 100%;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+/* The Info Card shows the core Advanced panel only from its Advanced tab. */
+.block-editor-block-inspector:has(.icon-box-inspector-tabs)
+	.block-editor-block-inspector__advanced {
+	display: none;
+}
+
+.block-editor-block-inspector:has(.icon-box-inspector-tabs.is-advanced-active)
+	.block-editor-block-inspector__advanced {
+	display: block;
+	border: 0;
+	padding: 16px;
+}
+
+.block-editor-block-inspector:has(.icon-box-inspector-tabs.is-advanced-active)
+	.block-editor-block-inspector__advanced
+	> .components-panel__body-title {
+	display: none;
+}
+
+.icon-box-inspector-tabs__nav {
+	display: flex;
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #DADDE1;
+	border-top: 1px solid #DADDE1;
+}
+
+.icon-box-inspector-tabs__button.components-button {
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 86px;
+	min-width: 0;
+	padding: 12px 10px 10px;
+	border: 0;
+	border-right: 1px solid #DADDE1;
+	border-radius: 0;
+	box-shadow: none;
+	background: #fff;
+	color: #757575 !important;
+	gap: 8px;
+	position: relative;
+	text-align: center;
+}
+
+.icon-box-inspector-tabs__button.components-button:last-child {
+	border-right: 0;
+}
+
+.icon-box-inspector-tabs__button.components-button:hover,
+.icon-box-inspector-tabs__button.components-button:focus {
+	color: #646970 !important;
+	box-shadow: none;
+}
+
+.icon-box-inspector-tabs__button.components-button.is-active {
+	color: #008ec2 !important;
+	box-shadow: none;
+}
+
+.icon-box-inspector-tabs__button.components-button.is-active::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	left: 0;
+	height: 3px;
+	background: #007CBA;
+}
+
+.icon-box-inspector-tabs__button .dashicon {
+	width: 22px;
+	height: 22px;
+	font-size: 22px;
+}
+
+.icon-box-tab-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	color: currentColor;
+}
+
+.icon-box-tab-icon--general {
+	width: 16px;
+	height: 15px;
+}
+
+.icon-box-inspector-tabs__button svg {
+	display: block;
+	color: currentColor;
+	fill: currentColor;
+	stroke: none;
+}
+
+.icon-box-inspector-tabs__button .dashicon,
+.icon-box-inspector-tabs__button .icon-box-tab-icon,
+.icon-box-inspector-tabs__button .icon-box-inspector-tabs__label {
+	color: inherit !important;
+}
+
+.icon-box-tab-icon--style svg {
+	width: 18px;
+	height: 21px;
+}
+
+.icon-box-tab-icon--advanced svg {
+	width: 17px;
+	height: 16px;
+}
+
+.icon-box-inspector-tabs__label {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.icon-box-inspector-tabs__content {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 14px 4px;
+}
+
+.icon-box-inspector-tabs__content .components-panel__body {
+	border: 0;
+	margin: -14px -12px 0;
+}
+
+.icon-box-settings-panel .components-panel__row {
+	display: block;
+	margin: 0 0 16px;
+}
+
+.icon-box-settings-panel .components-panel__row fieldset {
+	width: 100%;
+}
+
+.icon-box-settings-panel .components-base-control,
+.icon-box-settings-panel .components-base-control__field {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.icon-box-settings-panel .components-base-control__label,
+.icon-box-control-label,
+.icon-box-media-control__label {
+	display: block;
+	margin-bottom: 8px;
+	color: #757575;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: none;
+}
+
+.icon-box-settings-panel .components-text-control__input,
+.icon-box-settings-panel .block-editor-url-input__input {
+	width: 100%;
+	min-height: 32px;
+	padding: 6px 10px;
+	border-color: #a7aaad;
+	border-radius: 0;
+	box-shadow: none;
+	color: #222;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.icon-box-control {
+	width: 100%;
+}
+
+.icon-box-control--alignment .icon-box-control-label {
+	margin-bottom: 14px;
+}
+
+.icon-box-choice-group {
+	display: flex;
+	width: 100%;
+	border: 1px solid #dcdcde;
+	background: #fff;
+}
+
+.icon-box-choice-button.components-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 38px;
+	min-width: 0;
+	padding: 0 8px;
+	border: 0;
+	border-right: 1px solid #dcdcde;
+	border-radius: 0;
+	box-shadow: none;
+	background: #fff;
+	color: #50575e;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.icon-box-choice-button.components-button:last-child {
+	border-right: 0;
+}
+
+.icon-box-choice-button.components-button:hover,
+.icon-box-choice-button.components-button:focus,
+.icon-box-choice-button.components-button.is-active {
+	background: #dcf2ff;
+	color: #007cba;
+	box-shadow: none;
+}
+
+.icon-box-choice-button .dashicon {
+	width: 22px;
+	height: 22px;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+.icon-box-choice-button svg {
+	display: block;
+	color: currentColor;
+	fill: currentColor;
+}
+
+.icon-box-choice-group--alignment .icon-box-choice-button {
+	flex: 1 1 33.333%;
+}
+
+.icon-box-choice-group--heading-tag .icon-box-choice-button {
+	flex: 1 1 12.5%;
+	padding: 0 4px;
+}
+
+.icon-box-media-control {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.icon-box-media-control__field {
+	position: relative;
+	width: 100%;
+}
+
+.icon-box-media-control__preview.components-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 80px;
+	height: auto;
+	padding: 12px;
+	border: 1px solid #dcdcde;
+	border-radius: 0;
+	background: #fff;
+	box-shadow: none;
+	color: #50575e;
+	text-align: center;
+}
+
+.icon-box-media-control__preview.components-button:hover,
+.icon-box-media-control__preview.components-button:focus {
+	border-color: #8c8f94;
+	box-shadow: none;
+}
+
+.icon-box-media-control__preview img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+}
+
+.icon-box-media-control__placeholder {
+	display: block;
+	color: #757575;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.icon-box-media-control__remove.components-button {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	padding: 0;
+	border-radius: 50%;
+	background: #fff;
+	color: #1e1e1e;
+	box-shadow: 0 0 0 1px #dcdcde;
+}
+
+.icon-box-media-control__remove.components-button:hover,
+.icon-box-media-control__remove.components-button:focus {
+	background: #f6f7f7;
+	color: #1e1e1e;
+	box-shadow: 0 0 0 1px #8c8f94;
+}
+
+.icon-box-media-control__remove .dashicon {
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+}
+
+.icon-box-style-settings {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 0;
+	gap: 0;
+}
+
+.icon-box-style-settings__group-label {
+	display: block;
+	margin: 15px 0 5px;
+	color: #1e1e1e;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.icon-box-style-color-control {
+	 display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: auto;
+    padding: 8px 0;
+    gap: 12px;
+}
+
+.icon-box-style-color-control__label {
+ 	flex: 1;
+    margin: 0;
+    color: #646970;
+    font-size: 13px;
+    line-height: 1.4;
+	font-weight: 400;
+}
+
+.icon-box-style-color-control__actions {
+	 display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.icon-box-style-color-control__reset {
+    margin: 0;
+}
+
+
+
+.icon-box-style-color-control__reset.components-button:hover,
+.icon-box-style-color-control__reset.components-button:focus {
+	background: transparent;
+	color: #005a87;
+	box-shadow: none;
+}
+
+.icon-box-style-color-control__reset .dashicon {
+	width: 13px;
+	height: 13px;
+	font-size: 13px;
+	line-height: 17px;
+	color:#007CBA;
+}
+
+
+.icon-box-style-color-control__swatch.components-button {
+	display: block;
+	width: 28px;
+	min-width: 28px;
+	height: 28px;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #b8b8b8;
+	border-radius: 50%;
+	box-shadow: none;
+}
+
+.icon-box-style-color-control__swatch.components-button:hover,
+.icon-box-style-color-control__swatch.components-button:focus {
+	border-color: #757575;
+	box-shadow: 0 0 0 1px #fff, 0 0 0 2px #007cba;
+}
+
+.icon-box-style-color-control__popover {
+	padding: 12px;
+}
+
+.icon-box-style-color-control__popover .components-color-palette__custom-color-button {
+	height: 32px;
+}
+.icon-box-inspector-tabs .components-panel__row .components-input-control__container{
+	width:80% !important;
+}
+/* icon-box block style end */

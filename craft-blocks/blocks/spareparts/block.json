@@ -1,0 +1,77 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/spareparts",
+	"version": "0.1.0",
+	"title": "Spare Parts Slide Show",
+	"category": "widgets",
+	"attributes": {
+		"headingContent": {
+			"type": "string",
+			"selector": "h2",
+			"default": "Heading"
+		},
+		"showSlider": {
+			"type": "boolean",
+			"default": 0
+		},
+		"sliderDuration": {
+			"type": "number",
+			"default": 3000
+		},
+		"background_color": {
+			"type": "string",
+			"default": "#F2F7FF"
+		},
+		"selectedMediaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "spare parts"
+		},
+		"buttonLink": {
+			"type": "string",
+			"default": ""
+		},
+		"selectedMediaButtonUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"selectedCategory1": {
+			"type": "string",
+			"default": ""
+		},
+		"selectedProduct": {
+			"type": "array",
+			"default": []
+		},
+		"selectedProduct1": {
+			"type": "array",
+			"default": []
+		},
+		"selectedValues": {
+			"type": "array",
+			"default": []
+		},
+		"singleProducts": {
+			"type": "array",
+			"default": [
+				{
+					"image": "",
+					"title": "Heading",
+					"sku": "Subheading",
+					"buttontext": "Learn More",
+					"buttonlink": "",
+					"buttonicon": "",
+					"price": ""
+				}
+			]
+		}
+	},
+	"description": "Add image, title, products and buttons using a single block.",
+	"textdomain": "craft-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

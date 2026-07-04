@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/* style start */
+.header-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px 23px;
+}
+@media (max-width: 767px) {
+  .header-wrap {
+    padding: 15px;
+  }
+}
+.header-wrap .header-title {
+  border-radius: 50px;
+}
+.header-wrap .header-title * {
+  margin: 0;
+  font-family: Roboto;
+  letter-spacing: -0.02em;
+  border-radius: 50px;
+  padding: 3px 40px;
+}
+@media (max-width: 767px) {
+  .header-wrap .header-title * {
+    padding: 3px 20px;
+  }
+}
+.header-wrap .header-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+@media (max-width: 991px) {
+  .header-wrap .header-title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .header-wrap .header-title h2 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+}
+.header-wrap .subheading-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* style end */
+
+/*# sourceMappingURL=style-index.css.map*/

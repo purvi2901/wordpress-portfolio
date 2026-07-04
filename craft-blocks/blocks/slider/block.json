@@ -1,0 +1,19 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/slider",
+	"version": "0.1.0",
+	"title": "Custom Slider",
+	"category": "widgets",
+	"icon": "slides",
+	"attributes": {
+        "slides": {
+            "type": "array",
+            "default": []
+        }
+    },
+	"description": "Slider Block.",
+	"textdomain": "craft-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

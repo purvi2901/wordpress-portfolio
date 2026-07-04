@@ -1,0 +1,600 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.slideshow-bodyPanel .tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  border: 0;
+  border: 1px solid #DADDE1;
+  margin: 0;
+}
+.slideshow-bodyPanel .tabs button {
+  border: 0;
+  border-right: 1px solid #DADDE1;
+  background: #fff;
+  flex: 1;
+  min-height: 36px;
+  padding: 8px 10px 7px;
+  margin: 0;
+  color: #50575E;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  position: relative;
+}
+.slideshow-bodyPanel .tabs button:last-child {
+  border-right: 0;
+}
+.slideshow-bodyPanel .tabs button:focus, .slideshow-bodyPanel .tabs button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.slideshow-bodyPanel .tabs button.active {
+  background: #DCF2FF;
+  color: #1E1E1E;
+}
+.slideshow-bodyPanel .tabs button.active:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+}
+.slideshow-bodyPanel .tabs .tab-style-icon {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+}
+.slideshow-bodyPanel .tabs .tab-style-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.slideshow-bodyPanel button.components-button.slideshow-add-item {
+  background-color: #DCF2FF;
+  padding: 12px 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #007CBA;
+  font-size: 14px;
+  height: auto;
+}
+
+.slideshow-bodyPanel .slideshow-list-heading {
+  margin: 0 12px 10px;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.slideshow-bodyPanel .slider-settings.slideshow {
+  position: relative;
+}
+
+.slideshow-bodyPanel button.components-button.close {
+  position: absolute;
+  right: -20px;
+  top: -47px;
+  padding: 0;
+}
+
+.slideshow-bodyPanel .tab-content {
+  position: relative;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slideshow-bodyPanel .slider-settings.slideshow .tab-content-wrap {
+  display: none;
+}
+
+.slideshow-bodyPanel .slider-settings.slideshow .slideTap {
+  border: 1px solid #979797;
+  padding: 12px 15px;
+  position: relative;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #222222;
+}
+
+.slideshow-bodyPanel .slider-settings.slideshow .slideTap .toggleIcon {
+  right: 33px;
+  content: "";
+  position: absolute;
+}
+
+.slideshow-bodyPanel .slider-settings.activeslide .slideTap .toggleIcon {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.slideshow-bodyPanel .slider-settings .dragIcon {
+  font-size: 21px;
+  font-weight: bolder;
+  cursor: move;
+}
+
+.slideshow-bodyPanel .slider-settings > .close {
+  position: absolute;
+  left: 90%;
+  top: 0;
+}
+
+.slideshow-bodyPanel .slider-settings .slide-title {
+  padding-left: 15px;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 500;
+}
+
+.slideshow-bodyPanel .slider-settings.slideshow {
+  margin: 0 12px 14px;
+}
+
+.slideshow-bodyPanel .slider-settings.activeslide .tab-content-wrap {
+  display: block;
+  margin-top: 10px;
+}
+
+.slideshow-bodyPanel .slider-settings .slide-field-label,
+.slideshow-bodyPanel .slider-settings .slideshow-media-control > label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #757575;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control {
+  margin-bottom: 14px;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control__frame {
+  position: relative;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control__preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+  border: 1px solid #DADDE1;
+  background: #fff;
+  overflow: hidden;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control__preview img {
+  display: block;
+  width: 100%;
+  height: 96px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control__remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  min-width: 0;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #8C8F94;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control__remove .dashicon {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+}
+
+.slideshow-bodyPanel .slider-settings .slideshow-media-control__change {
+  width: 100%;
+  justify-content: center;
+  min-height: 28px;
+  padding: 5px 8px;
+  border: 1px solid #DADDE1;
+  border-top: 0;
+  border-radius: 0;
+  color: #222222;
+  background: #F0F0F0;
+  box-shadow: none;
+  font-size: 13px;
+}
+
+.slideshow-bodyPanel .slider-settings .components-textarea-control__input {
+  min-height: 112px;
+}
+
+.slideshow-bodyPanel .slider-settings .button-style-group {
+  padding: 18px 0;
+}
+
+.slideshow-bodyPanel .slider-settings .button-style-group:first-of-type {
+  padding-top: 6px;
+  border-top: 0;
+}
+
+.slideshow-bodyPanel .slider-settings .button-style-group h3 {
+  margin: 0 0 18px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #1e1e1e;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 42px;
+  margin-bottom: 6px;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-row span {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #757575;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-row .style-color-reset {
+  min-width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-reset .dashicon {
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #007cba;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-swatch {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+  border: 1px solid #dcdcde;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slideshow-bodyPanel .slider-settings .style-color-swatch input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-field {
+  margin-bottom: 16px;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #1e1e1e;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+  padding: 16px;
+  border: 1px solid #dcdcde;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-preview img {
+  width: auto;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-remove .dashicon {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.slideshow-bodyPanel .slider-settings .button-icon-upload {
+  margin-bottom: 0;
+}
+
+.slideshow-bodyPanel .slider-settings .slideTap .components-button.close {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.slideshow-bodyPanel .slider-settings .slideTap .components-button.close svg {
+  fill: #222222;
+}
+
+.slideshow-bodyPanel .slider-settings .slideTap .toggleIcon:after {
+  right: 2px;
+  content: "";
+  position: absolute;
+  border: solid #222222;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg) translateY(-50%);
+  -webkit-transform: rotate(45deg) translateY(-55%);
+  top: 29%;
+  cursor: pointer;
+}
+
+.slideshow-bodyPanel .slider-settings.activeslide .slideTap .toggleIcon:after {
+  transform: rotate(180deg) translateY(-50%);
+  -webkit-transform: rotate(45deg) translateY(-50%);
+  right: 15px;
+}
+
+.slideshow-bodyPanel .slider-settings .slideTap .toggleIcon .dashicon {
+  font-size: 0px;
+}
+
+.block-editor-block-list__block .qhb-slideshow .product_slider-main:not(.slick-initialized) .product_slider_main-wrap:not(:first-child) {
+  display: none;
+}
+
+.block-editor-block-list__block .qhb-slideshow .product-slider-sub:not(.slick-initialized) {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.block-editor-block-list__block .qhb-slideshow .product-slider-sub:not(.slick-initialized) .image-nav-slider {
+  flex: 0 0 calc((100% - 32px) / 3);
+}
+
+.block-editor-block-list__block .qhb-slideshow .product-slider-sub:not(.slick-initialized) .image-nav-slider:nth-child(n+4) {
+  display: none;
+}
+
+.slideshow-bodyPanel.is-slide-sorting .slider-settings.activeslide .tab-content-wrap,
+.slideshow-bodyPanel.is-slide-sorting .slider-settings .tab-content-wrap {
+  display: none !important;
+}
+
+.slideshow-sort-helper {
+  box-sizing: border-box;
+  width: 232px;
+  max-width: calc(100vw - 32px);
+  background: #fff;
+  z-index: 999999;
+}
+
+.slideshow-sort-helper .tab-content-wrap {
+  display: none !important;
+}
+
+.slideshow-sort-helper .slideTap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  gap: 8px;
+  border: 1px solid #979797;
+  background: #fff;
+  color: #222;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.slideshow-sort-helper .dragIcon {
+  flex: 0 0 auto;
+  color: #222;
+  cursor: move;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.slideshow-sort-helper .slide-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-left: 0;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slideshow-sort-helper .toggleIcon,
+.slideshow-sort-helper .components-button.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 24px;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  position: relative;
+  inset: auto;
+}
+
+.slideshow-sort-helper .toggleIcon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: solid #222;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.slideshow-sort-helper .toggleIcon .dashicon {
+  font-size: 0;
+}
+
+.slideshow-sort-helper .components-button.close svg {
+  fill: #222;
+}
+
+/*# sourceMappingURL=index.css.map*/

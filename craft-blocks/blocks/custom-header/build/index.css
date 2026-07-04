@@ -1,0 +1,196 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/*  style start */
+.custom-header-inspector-tabs .tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #DADDE1;
+  border-top: 1px solid #DADDE1;
+  margin: 0;
+}
+.custom-header-inspector-tabs .tabs button {
+  border: 0;
+  border-right: 1px solid #DADDE1;
+  background: #fff;
+  flex: 1;
+  min-height: 86px;
+  padding: 12px 10px 10px;
+  margin: 0;
+  color: #50575E;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+.custom-header-inspector-tabs .tabs button:last-child {
+  border-right: 0;
+}
+.custom-header-inspector-tabs .tabs button:focus, .custom-header-inspector-tabs .tabs button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.custom-header-inspector-tabs .tabs button.active {
+  background: #fff;
+  color: #008EC2;
+}
+.custom-header-inspector-tabs .tabs button.active:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background: #007CBA;
+}
+.custom-header-inspector-tabs .tabs .tab-icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+}
+.custom-header-inspector-tabs .tabs .tab-icon svg {
+  display: block;
+  fill: currentColor;
+  stroke: none;
+}
+.custom-header-inspector-tabs .tabs .tab-icon--general {
+  width: 16px;
+  height: 15px;
+}
+.custom-header-inspector-tabs .tabs .tab-icon--style {
+  width: 18px;
+  height: 21px;
+}
+.custom-header-inspector-tabs .tabs .tab-icon--advanced {
+  width: 17px;
+  height: 16px;
+}
+
+.block-editor-block-inspector:has(.custom-header-inspector-tabs) .block-editor-block-inspector__advanced {
+  display: none;
+}
+
+.custom-header-inspector-tabs .components-tools-panel-item.block-editor-tools-panel-color-gradient-settings__item {
+  margin-top: 0;
+  border-top: none !important;
+}
+
+.block-editor-block-inspector:has(.custom-header-inspector-tabs.is-advanced-active) .block-editor-block-inspector__advanced {
+  display: block;
+  border: 0;
+  padding: 16px;
+}
+
+.block-editor-block-inspector:has(.custom-header-inspector-tabs.is-advanced-active) .block-editor-block-inspector__advanced > .components-panel__body-title {
+  display: none;
+}
+
+.components-base-control__field label {
+  width: 100%;
+}
+
+.subheading-wrap .components-flex {
+  flex-direction: row-reverse;
+}
+
+.custom-header-inspector-tabs.tab-content-wrap {
+  width: 100%;
+}
+.custom-header-inspector-tabs.tab-content-wrap .tab-content {
+  padding: 18px 16px 24px;
+}
+.custom-header-inspector-tabs.tab-content-wrap .content-section > .components-base-control,
+.custom-header-inspector-tabs.tab-content-wrap .content-section > .custom-header-heading-tag,
+.custom-header-inspector-tabs.tab-content-wrap .content-section > .subheading-wrap {
+  margin-bottom: 18px;
+}
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1e1e1e;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__options {
+  display: flex;
+  width: 100%;
+  border: 1px solid #dcdcde;
+  background: #fff;
+}
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__button.components-button {
+  display: flex;
+  flex: 1 1 12.5%;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  min-width: 0;
+  padding: 0 3px;
+  border: 0;
+  border-right: 1px solid #dcdcde;
+  border-radius: 0;
+  box-shadow: none;
+  background: #fff;
+  color: #50575e;
+  font-size: 11px;
+}
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__button.components-button:last-child {
+  border-right: 0;
+}
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__button.components-button:hover,
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__button.components-button:focus,
+.custom-header-inspector-tabs.tab-content-wrap .custom-header-heading-tag__button.components-button.is-active {
+  background: #dcf2ff;
+  color: #007cba;
+  box-shadow: none;
+}
+.custom-header-inspector-tabs.tab-content-wrap .style-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.custom-header-inspector-tabs.tab-content-wrap .style-section .components-grid {
+  padding: 6px 0;
+  display: flex !important;
+  align-items: center;
+  border: 0;
+}
+.custom-header-inspector-tabs.tab-content-wrap .components-tools-panel-item {
+  border: 0px;
+  margin-top: 0;
+}
+.custom-header-inspector-tabs.tab-content-wrap .components-tools-panel-item .components-button {
+  padding: 0 !important;
+  border: 0px !important;
+}
+.custom-header-inspector-tabs.tab-content-wrap .components-tools-panel-item .components-button .components-flex {
+  border: 1px solid #C1C1C1;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+}
+.custom-header-inspector-tabs.tab-content-wrap .components-tools-panel-item .components-button .components-flex span.component-color-indicator {
+  height: 100%;
+  width: 100%;
+}
+.custom-header-inspector-tabs.tab-content-wrap .components-dropdown {
+  border-color: transparent !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/*  style end */
+
+/*# sourceMappingURL=index.css.map*/

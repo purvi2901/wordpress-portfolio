@@ -1,0 +1,72 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/icon-box",
+	"version": "0.1.0",
+	"title": "Info Card",
+	"category": "widgets",
+	"description": "Add icon, heading, description and buttons using a single block.",
+	"attributes": {
+		"descriptionContent": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"align": {
+			"type": "string",
+			"default": "none"
+		},
+		"heading":{
+			"type":"string"
+		},
+		"iconName":{
+			"type":"string"
+		},
+		"showHeading":{
+			"type":"boolean"
+		},
+		"headingTag":{
+			"type":"string",
+			"default": "h2"
+		},
+		"sectionBackgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"buttonColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"buttonBackgroundColor": {
+			"type": "string",
+			"default": "#26335B"
+		},
+		"iconColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"headingContent": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonText": {
+			"type": "string",
+			"default": ""
+		},
+		"selectedMediaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonLink": {
+			"type": "string",
+			"default": ""
+		},
+		"selectedMediaButtonUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "craft-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

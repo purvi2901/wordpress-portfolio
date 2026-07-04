@@ -1,0 +1,44 @@
+{
+	"name": "craft-blocks",
+	"version": "0.1.0",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"dev": "wp-scripts start",
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"start:faq": "wp-scripts start blocks/faq/src/index.js --output-path=blocks/faq/build/",
+		"build:faq": "wp-scripts build blocks/faq/src/index.js --output-path=blocks/faq/build/",
+		"start:icon-box": "wp-scripts start blocks/icon-box/src/index.js --output-path=blocks/icon-box/build/",
+		"build:icon-box": "wp-scripts build blocks/icon-box/src/index.js --output-path=blocks/icon-box/build/",
+		"start:slider": "wp-scripts start blocks/slider/src/index.js --output-path=blocks/slider/build/",
+		"build:slider": "wp-scripts build blocks/slider/src/index.js --output-path=blocks/slider/build/",
+		"start:slideshow": "wp-scripts start blocks/slideshow/src/index.js --output-path=blocks/slideshow/build/",
+		"build:slideshow": "wp-scripts build blocks/slideshow/src/index.js --output-path=blocks/slideshow/build/",
+		"start:spareparts": "wp-scripts start blocks/spareparts/src/index.js --output-path=blocks/spareparts/build/",
+		"build:spareparts": "wp-scripts build blocks/spareparts/src/index.js --output-path=blocks/spareparts/build/",
+		"start:product-card": "wp-scripts start blocks/product-card/src/index.js --output-path=blocks/product-card/build/",
+		"build:product-card": "wp-scripts build blocks/product-card/src/index.js --output-path=blocks/product-card/build/",
+		"start:icon-box": "wp-scripts start blocks/icon-box/src/index.js --output-path=blocks/icon-box/build/",
+		"start:test-header": "wp-scripts start blocks/test-header/src/index.js --output-path=blocks/test-header/build/",
+		"build:test-header": "wp-scripts build blocks/test-header/src/index.js --output-path=blocks/test-header/build/"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^7.0.0",
+		"@wordpress/blocks": "^11.0.0",
+		"@wordpress/i18n": "^4.2.1",
+		"array-move": "^4.0.0",
+		"react": "^18.2.0",
+		"react-scripts": "^5.0.1",
+		"react-select": "^5.8.0",
+		"react-sortable-hoc": "^2.0.0"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^17.1.0"
+	}
+}

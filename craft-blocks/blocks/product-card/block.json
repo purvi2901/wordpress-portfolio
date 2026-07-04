@@ -1,0 +1,56 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/product-card",
+	"version": "0.1.0",
+	"title": "Product Card",
+	"category": "widgets",
+	"icon": "slides",
+	"attributes": {
+		"showSlider":{
+			"type":"boolean"
+		},
+		"showTitle":{
+			"type":"boolean"
+		},
+		"title":{
+			"type":"string"
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "#8E9FBC"
+		},
+		"backgroundColor1": {
+			"type": "string",
+			"default": "#F2F7FF"
+		},
+        "slides": {
+            "type": "array",
+            "default": [
+		      	{ 
+		      		"id":"",
+		      		"activeTab": "content",
+		      		"image": "",
+		      		"heading": "Heading", 
+		      		"headingColor": "",
+		      		"buttontext": "Learn More",
+		      		"buttonlink": "",
+		      		"buttonicon": "",
+		      		"buttontext2": "Buy Now",
+		      		"buttonlink2": "",
+		      		"buttonicon2": "",
+		      		"textColor": "#fff",
+		      		"backgroundColor1": "#26335B",
+		      		"iconColor":"",
+		      		"textColor2": "#fff",
+		      		"backgroundColor2": "#3574DF",
+		      		"iconColor2":""
+		      	}
+		     ]
+        }
+	},
+	"description": "Add heading, images, title, and buttons using a single block.",
+	"textdomain": "craft-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

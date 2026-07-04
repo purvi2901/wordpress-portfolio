@@ -1,0 +1,41 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/faq",
+	"version": "0.1.0",
+	"title": "FAQ",
+	"category": "widgets",
+	"icon": "editor-help",
+	"description": "FAQ Block.",
+	"attributes": {
+	    "faq_title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2",
+			"default": "FAQ"
+		},
+	    "faqs": {
+	     	"type": "array",
+	     	"default": [
+	      	{ 
+	      		"question": "Question", 
+	      		"answer": "Answer" 
+	      	}
+	      ]
+	    },
+	    "textColor": {
+            "type": "string",
+            "default": "#000000", 
+            "title": "Title Color"
+        }
+	},
+	"supports": {		
+		"color": {
+            "text": true,
+            "background": true
+        }
+	},
+	"textdomain": "craft-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

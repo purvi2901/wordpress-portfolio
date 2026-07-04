@@ -1,0 +1,705 @@
+$color_1: #fff;
+$color_2: #222;
+$color_3: #8E9FBC;
+$color_4: #D9D9D9;
+$color_5: transparent;
+$font-family_1: Roboto;
+
+
+.qhb-spareparts-slideshow {
+    .spare-part-section {
+        .spare-part-product-name {
+                flex-wrap: wrap;
+                display: flex;
+                align-items: center;
+                padding: 20px 20px 0px;
+                position: relative;
+                @media screen and (max-width:1199px) {
+                    justify-content: center;
+                    padding-bottom: 0px;
+                }
+            .all-spare-parts-btn.all-spare-btn {
+                a {
+                    color: #fff !important;
+                    &:after {
+                        content:none;
+                    }
+                    img{
+                        margin-left:8px;
+                    }
+                }
+
+                @media screen and (max-width:991px) {
+                    position: absolute;
+                    margin: 0px;
+                }
+            }
+
+        }
+
+        .sp-wrap-slideshow {
+            display: flex;
+            padding: 20px;
+            flex-wrap:wrap;
+    		align-items: stretch;
+
+            &.without-featured-image {
+                .all-spare-parts-slideshow {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            .all-spare-parts-slideshow {
+                display: flex;
+                width: calc(78% - 30px);
+                background-color: #fff;
+                margin: 0 0px 0px 30px;
+                padding: 20px 30px 35px;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+                @media (max-width: 1199px){
+                     width: 100%;
+                     margin: 0;
+                    padding: 20px 30px 35px;
+                }   
+                @media (max-width: 767px){
+                    padding: 14px 30px 27px;
+                }
+                &.is-slider-disabled {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    align-items: stretch;
+                    gap: 20px;
+                    padding-bottom: 20px;
+
+                    .spare-parts {
+                        width: 100%;
+                        min-width: 0;
+
+                        & > div {
+                            margin: 0;
+                        }
+                    }
+
+                    @media (max-width: 1199px) {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+
+                    @media (max-width: 767px) {
+                        grid-template-columns: minmax(0, 1fr);
+                    }
+                }
+                .slick-list {
+                    width: 94%;
+                    margin-left: auto;
+                    margin-right: auto;  
+                    @media (max-width: 767px){
+                        width: 100%;
+                    }
+                }
+                .spare-parts {
+                    background-color: transparent;
+                    width: 280px;
+                    margin: 0 !important;
+                    & > div{
+                        background-color: #fff;
+                        margin: 10px 10px;
+                    }
+
+                    .spare-parts-wrap {
+                        height: 100%;
+                        padding: 15px;
+                        -moz-box-shadow:0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+                        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+                        @media (max-width: 767px){
+                            padding: 10px 10px 17px 10px;
+                        }
+                        .spare-part-img {
+                            background-color: white;
+                            width: 100%;
+                            height: 175px;
+                            position: relative;
+                            .spare-part-product-popup { 
+                                position: initial;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%
+                                }
+                            }
+                        }
+
+                        .sp-sku {
+                            padding-bottom: 18px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            letter-spacing: 0px;
+                            padding-top: 20px;
+                            @media (max-width: 1199px){
+                                font-size: 14px;
+                                padding-top: 18px;
+                                line-height:16.41px;
+                            }
+                        }
+
+                        .spare-part-price {
+                            .woocommerce-Price-amount {
+                                justify-content: center !important;
+                            }
+                        }
+
+
+                        .spare-part-buy-container {
+                            .sp-add-to-cart-btn-wrap{
+                                input {
+                                    width: 60px;
+                                    border-radius: 10px;
+                                    background: #8E9FBC;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: none;
+                                    margin-right: 10px;
+                                }
+                                a{
+                                    width: 100%;
+                                }
+                                display: flex;
+                                width: 100% !important;
+                            }
+                            margin: 10px;
+                        }
+                    }
+                }
+
+            }
+
+            .spare-part-product-img {
+                box-sizing: border-box;
+                width: 22% !important;
+                margin: 10px 0;
+                padding: 28px 18px;
+                border-radius: 200px;
+                background-color: white;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    width: 100% !important;
+                    max-width: 240px !important;
+                    height: auto !important;
+                    max-height: 80%;
+                    border-radius: 20px;
+                    object-fit: contain;
+                }
+                @media (max-width: 1199px){
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+.spare-part-container1 {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 21%);
+}
+
+
+/* ==========================*/
+
+
+.qhb-spareparts-slideshow{
+    font-family: "Roboto", sans-serif;
+    .spare-part-product-name-wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        @media (max-width:1199px){ 
+            width: auto;
+            border-radius: 50px;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0px 0px 6px 0px #0000001A;
+            padding: 6px 30px;
+            background: #fff;
+            margin-right: 100px;
+        }
+        @media (max-width:767px){ 
+            margin-right: 0px;
+            padding: 5px 20px;
+            gap: 2px;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            color: #8E9FBC;
+            @media (max-width:767px){ 
+                text-align: center;
+                font-size: 14px;
+                letter-spacing: -0.02em;
+            }
+        }
+    }
+    .sp-product-name {
+        background-color: white;
+        color: #929fbc;
+        border-radius: 100px;
+        padding: 15px 30px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: 1199px){
+            background-color: transparent;
+            border-radius: 0px;
+            padding: 0px;
+            box-shadow: none;        
+        }
+    }
+    .all-spare-parts-btn {
+        display: flex;
+        width: 13%;
+        border-radius: 10px;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        a {
+        
+            padding: 5px 10px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding: 12px 25px 12px 19px;
+            border-radius: 10px;
+            background-color: #26335b;
+            line-height: normal;
+
+            @media screen and (max-width:767px) {
+                font-size: 12px;
+                line-height:14.06px;
+                padding: 10px 27px 10px 16px;
+            }
+        }
+
+        @media (max-width:992px){ 
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            position: initial;
+        }
+        &.mobile-view-section{
+            display: none;
+            img {
+                display: none;
+            }
+            @media (max-width:767px){ 
+                display: block;
+            }
+        }
+    &.desktop-view-section{
+            display: flex !important;
+            @media (max-width:767px){ 
+                display: none !important;
+            }
+        }    
+    }
+
+    .spare-part-product-img {
+        padding-top: 125px;
+        background-color: white;
+        width: 22% !important;
+        margin: 10px;
+        border-radius: 200px;
+        img {
+            border-radius: 20px;
+            width: 240px !important;
+        }
+        &.mobile-view-section{
+            display: none;
+            img {
+                width: 100% !important;
+                max-width: 47px !important;
+                @media (max-width:767px){ 
+                    max-width: 33px !important;
+                }
+            }
+            @media (max-width:1199px){ 
+                display: block;
+                padding: 0;
+                box-shadow: none;
+                background: transparent;
+                margin: 0;
+                width: auto !important;
+            }
+        }
+        &.desktop-view-section{
+            display: flex !important;
+            @media (max-width:1199px){ 
+                display: none !important;
+            }
+        }
+    }
+    
+    .sp-buy-form {
+        display: flex;
+        flex-wrap: wrap;
+        .quantity {
+            width: 70px;
+            border-radius: 10px;
+            background: #8E9FBC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .sp-add-to-cart-btn {
+        padding: 10px !important;
+    }
+    .spare-part-name {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        @media screen and (max-width:767px)
+        {
+            font-size: 14px;
+            line-height: 16.41px;
+        }
+    }
+    .spare-part-img {
+        background-color: white;
+        width: 100%;
+        height: 175px;
+        position: relative;
+        * {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+       
+    }
+    .spare-part-buy-container {
+        margin: 10px;
+        input {
+            width: 100%;
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .spare-part-container {
+        background-color: #F2F7FF;
+    }
+    .spare-part-name {
+        padding: 0 0 18px;
+        h6 {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px 0;
+        }
+    }
+    .spare-part-price {
+        color: #8E9FBC;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        @media screen and (max-width:767px)
+        {
+            font-size: 16px;
+            line-height: 18.75px;
+        }
+    }
+    .sp-add-to-cart-btn-wrap {
+        button {
+            border-radius: 10px;
+            background: #3574DF !important;
+            padding: 10px 15px !important;
+            font-size: 16px !important;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150% !important;
+            color: #FFF;
+            border: none;
+            width: 100%;
+            i {
+                margin-right: 13px;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                
+            }
+            @media (max-width:1199px){
+                padding: 10px 10px !important;       
+                font-size: 12px !important;
+                font-weight: 500;
+            }
+            &:before {
+                content:'';
+                background: url('images/shopping_bag.svg');
+                width:12px;
+                height:13.71px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-right: 6px;  
+                @media (max-width:1199px){              
+                    transform: translateY(3px);
+                }
+
+            }           
+            
+        }
+        a{
+            width: 100%;
+        }
+        width: calc(100% - 70px);
+        text-align: right;
+        width: calc(100% - 70px);
+        text-align: right;
+    }
+
+    .spare-part-product-popup {
+        button {
+        
+            color: #26335b !important;
+            background-color: #fff !important;
+            border-radius: 100%;
+            border: none;
+            /* box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.75); */
+            height: 22px;
+            width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            i {
+                color: #26335b !important;
+                font-size: 22px;
+                &:before {
+                  color: inherit !important;
+                }
+            }
+        }
+    }
+    .add-to-cart-form {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .add-to-cart-btn-wrap {
+        button {
+            background-color: #3574DF !important;
+        }
+    }
+    .bg-color-white {
+        background-color: white;
+    }
+    .woocommerce-checkout-payment {
+        background-color: white !important;
+    }
+    .slick-slider {
+		.slick-arrow {
+			background-color: $color_5 !important;
+			border: none;
+			z-index: 9;
+			position: absolute;
+			top: 45%;
+			left: 10px;
+			width: 40px;
+			height: 40px;
+			font-size: 0px;
+            padding: 0px;
+			color: $color_1;
+			transition: all 200ms ease;
+			cursor: pointer;
+			outline: none;
+            @media (max-width:1199px){            
+                width: 30px;
+                height: 30px;
+            }
+		}
+		.slick-arrow.slick-prev,.slick-next  {
+			&:after {
+				content: '';
+				background-image: url(./images/arrow_circle_left.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 100% !important;
+				height: 100% !important;
+				display: inline-block;
+			}
+		}
+		.slick-arrow.slick-next {
+            position: absolute;
+            left: auto;
+            right: 10px !important;
+            &::after{
+                background-image: url(./images/arrow_circle_right.svg);
+            }         
+            @media (max-width:767px){
+                right: 4px !important; 
+            }          
+        }
+        .slick-arrow.slick-prev {        
+            @media (max-width:767px){
+                left: 4px !important; 
+            }
+        }
+		.slick-dots {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 7px;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 0 5px;
+				button {
+					width: 6px;
+					height: 6px;
+					border-radius: 100%;
+					border: none;
+					padding: 0;
+                    background-color: #8e9fbc !important;
+					text-indent: -9999px;
+					cursor: pointer;
+					opacity: .5;
+					transition: all 200ms ease;
+				}
+			}
+			li.slick-active {
+				button {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+/*
+ * Keep the saved frontend card layout aligned with the editor preview.
+ * These selectors intentionally outrank the theme's legacy spare-parts CSS.
+ */
+.qhb-spareparts-slideshow {
+    .sp-wrap-slideshow {
+        .all-spare-parts-slideshow {
+            box-sizing: border-box;
+
+            &.is-slider-disabled {
+                .spare-parts {
+                    display: flex;
+                    width: 100% !important;
+                    min-width: 0;
+                    margin: 0 !important;
+                    background-color: transparent;
+
+                    > .spare-parts-wrap {
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        padding: 15px;
+                        margin: 0 !important;
+                        background-color: #fff;
+                    }
+
+                    .spare-part-img {
+                        width: 100%;
+                        height: 175px !important;
+                        min-height: 175px;
+                        overflow: hidden;
+                        position: relative;
+                    }
+
+                    .spare-part-product-popup {
+                        position: relative !important;
+                        inset: auto !important;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+
+                        > a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+
+                        button {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            z-index: 2;
+                        }
+                    }
+
+                    .sp-sku,
+                    .spare-part-name,
+                    .spare-part-price {
+                        box-sizing: border-box;
+                        width: 100%;
+                    }
+
+                    .spare-part-name {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-height: 55px;
+                        padding: 0 !important;
+                    }
+
+                    .spare-part-buy-container {
+                        width: auto;
+                        margin: auto 10px 10px;
+                    }
+
+                    .sp-add-to-cart-btn-wrap,
+                    .sp-add-to-cart-btn-wrap > a,
+                    .sp-add-to-cart-btn-wrap button {
+                        width: 100% !important;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+            .spare-part-product-popup {
+                font-size: 0;
+                line-height: 0;
+
+                button {
+                    font-size: initial;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

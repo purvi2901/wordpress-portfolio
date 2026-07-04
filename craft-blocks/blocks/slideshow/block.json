@@ -1,0 +1,44 @@
+{
+	"apiVersion": 2,
+	"name": "craft-blocks/slideshow",
+	"version": "0.1.0",
+	"title": "Slide Show",
+	"category": "widgets",
+	"attributes": {
+        "slides": {
+            "type": "array",
+            "default": [
+		      	{ 
+		      		"activeTab": "content",
+		      		"image": "",
+		      		"heading": "Heading", 
+		      		"subheading": "Subheading",
+		      		"description": "Description",
+		      		"buttontext": "Learn More",
+		      		"buttonlink": "",
+		      		"buttonicon": "",
+		      		"buttontext2": "Learn More",
+		      		"buttonlink2": "",
+		      		"buttonicon2": "",
+		      		"buttontext3": "Learn More",
+		      		"buttonlink3": "",
+		      		"buttonicon3": "",
+		      		"textColor": "#fff",
+		      		"backgroundColor1": "#26335B",
+		      		"iconColor":"#fff",
+		      		"textColor2": "#fff",
+		      		"backgroundColor2": "#3574DF",
+		      		"iconColor2":"#fff",
+		      		"textColor3": "#fff",
+		      		"backgroundColor3": "#8E9FBC",
+		      		"iconColor3":"#fff"
+		      	}
+		     ]
+        }
+	},
+	"textdomain": "craft-blocks",
+	"description": "Add image, heading, description and buttons using a single block.",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
